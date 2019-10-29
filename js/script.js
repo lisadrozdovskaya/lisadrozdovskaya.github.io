@@ -1,23 +1,3 @@
-// function lll() {
-//     let menu = document.querySelector('.burger-link');
-//     let menuActive = document.querySelector('.burger-link-active');
-//     let navigation = document.querySelector('.myMenu');
-//     // let navActive = document.querySelector('.menu-active');
- 
-//     menu.addEventListener('click', function() {
-//         e.preventDefault();
-//         menu.classList.add('burger-link-active');
-//         navigation.classList.add('menu-active');
-//     }),
-
-//     menuActive.addEventListener('click', function() {
-//         // e.preventDefault();
-//         menu.classList.remove('burger-link-active');
-//         navigation.classList.remove('menu-active');
-
-//     });
-// };
-// lll()
 
         let menu = $('.burger-link');
         let menuActive = $('.burger-link-active');
@@ -34,17 +14,6 @@
             menu.removeleClass('burger-link-active');
             navigation.removeleClass('menu-active');
         });
-            
-          
-
-           
-        
-    
-          
-   
-
-
-
 
 // -------navigation----
 function  navTab() {
@@ -143,63 +112,6 @@ $('.one-time').slick({
     arrows: false
   });
 
-
-
-
-// let navLi = $('.myMenu li');
-// let bar = $('.probar');
-// $('.tracked').waypoint( function() {
-
-
-//     let hash = $(this).attr('id');
-//     navLi.removeClass('active');
-
-//     $.each( navLi, function() {
-//         if ( $(this).children('a').attr('href').slice(1) == hash ) {
-//             $(this).addClass('active');
-//         }
-//     });
-// }, {offset: '30px' 
-// }, {offset: '50%'}
-// );
-
-
-
-
-// -----------header scroll
-// window.onscroll = function() {myFunction()};
-// function myFunction() {
-//     let header = document.getElementById("myHeader");
-//     let sticky = header.offsetTop;  
-   
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-// 
-// window.onscroll = function(asd) {myFunction()};
-
-// function myFunction() {
-//     let header = document.getElementById("burger-link");
-//     let sticky = header.offsetTop;
-
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-
-
-
-
-
-
-
-
-
  window.onscroll = function() {myFunction()};
  function myFunction() {
         if( window.innerWidth > 960 ){
@@ -224,18 +136,6 @@ $('.one-time').slick({
         }
     }; 
      
-    
-
-  
-// 
-// window.onscroll = function(asd) {myFunction()};
-
-// function myFunction() {
-    
-// }
-
-// $(document).ready(function () {
-//     $(document).on("scroll", onScroll);
 
 // ---------line bar--------
 $('#progressbar1').LineProgressbar({
@@ -271,11 +171,9 @@ function phototab() {
         let index = target.dataset.link;
         // let disabledTab = document.querySelectorAll('.disabled');
         let newActiveTab = document.querySelector(`#${index}`);
-
         let currentLink  = document.querySelector(`.active`);
 
        
-
         currentLink.classList.remove('active');
         target.classList.add('active');
 
