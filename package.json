@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisadrozdovskaya/lisadrozdovskaya.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisadrozdovskaya/lisadrozdovskaya.github.io/issues"
+  },
+  "homepage": "https://github.com/lisadrozdovskaya/lisadrozdovskaya.github.io#readme",
+  "dependencies": {
+    "jquery-circle-progress": "^1.2.2"
+  }
+}

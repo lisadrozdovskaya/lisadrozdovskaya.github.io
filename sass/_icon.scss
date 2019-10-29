@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'icomoon';
+ 
+    src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf') format('truetype'),
+      url('../fonts/icomoon.woff') format('woff'),
+      url('../fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+
+
+  
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-angle-bottom1:before {
+    content: "\e90c";
+    color: #fff;
+    display: block;
+    transform: scale(0.8);
+  }
+  .icon-light:before {
+    content: "\e900";
+    color: #fff;
+    display: block; 
+    transform: scale(1.6);
+  }
+  .icon-link:before {
+    content: "\e901";
+    color: #fff;
+  }
+  .icon-love:before {
+    content: "\e902";
+    color: #fff;
+    display: block; 
+    transform: scale(1.6);
+    padding-right: 1px;
+  }
+  .icon-mail:before {
+    content: "\e903";
+    color: #fff;
+    display: block; 
+    transform: scale(3.5);
+  }
+  .icon-map-marker:before {
+    content: "\e904";
+    color: #fff;
+    display: block; 
+    transform: scale(3.5);
+  }
+  .icon-mouse:before {
+    content: "\e905";
+    color: #fff;
+    display: block; 
+    transform: scale(1.6);
+    padding-left: 4px;
+  }
+  .icon-paint:before {
+    content: "\e906";
+    color: #fff;
+    display: block; 
+    transform: rotateY(180deg) scale(1.6);
+  }
+  .icon-phone:before {
+    content: "\e907";
+    color: #fff;
+    display: block; 
+    transform: scale(3.5);
+  }
+  .icon-play:before {
+    content: "\e908";
+    color: #fff;
+    display: block; 
+    transform: scale(1.6);
+  }
+  .icon-setting:before {
+    content: "\e909";
+    color: #fff;
+    display: block; 
+    transform: scale(1.6);
+  }
+  .icon-angle-bottom:before {
+    content: "\e90a";
+    color: #fff;
+  }
+  .icon-energy:before {
+    content: "\e90b";
+    color: #fff;
+    display: block; 
+    transform: scale(1.6);
+  }
+  
