@@ -232,7 +232,7 @@ function phototab() {
 
         let index = target.dataset.link;
         // let disabledTab = document.querySelectorAll('.disabled');
-        let newActiveTab = document.querySelectorAll(`${index}`);
+        let newActiveTab = document.querySelectorAll(`#${index}`);
         let currentLink  = document.querySelector(`.active`);
 
        
