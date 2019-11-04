@@ -15,26 +15,78 @@
             navigation.removeleClass('menu-active');
         });
 
-// -------navigation----
-function  navTab() {
-    let listNav = document.querySelector('.myMenu'); 
+// // -------navigation----
+// function  navTab() {
+//     let listNav = document.querySelector('.myMenu'); 
 
-    listNav.addEventListener('click', function(e){
-        let target = e.target.closest('.menu');
+//     listNav.addEventListener('click', function(e){
+//         let target = e.target.closest('.menu');
 
-        if(!target) return;
+//         if(!target) return;
 
-        [].forEach.call(listNav.querySelectorAll('a'), function(item) {
+//         [].forEach.call(listNav.querySelectorAll('a'), function(item) {
 
-            item.classList.remove('active');
-        });
-        e.target.classList.add('active');
+//             item.classList.remove('active');
+//         });
+//         e.target.classList.add('active');
 
 
-    })
-  };
+//     })
+//   };
 
-  navTab()
+//   navTab()
+
+
+
+//   var lastId,
+//  topMenu = $("#myMenu"),
+//  topMenuHeight = topMenu.outerHeight()+1,
+//  // All list items
+//  menuItems = topMenu.find("a"),
+//  // Anchors corresponding to menu items
+//  scrollItems = menuItems.map(function(){
+//    var item = $($(this).attr("href"));
+//     if (item.length) { return item; }
+//  });
+
+// // Bind click handler to menu items
+// // so we can get a fancy scroll animation
+// menuItems.click(function(e){
+//   var href = $(this).attr("href"),
+//       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+//   $('html, body').stop().animate({ 
+//       scrollTop: offsetTop
+//   }, 850);
+//   e.preventDefault();
+// });
+
+// // Bind to scroll
+// $(window).scroll(function(){
+//    // Get container scroll position
+//    var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+//    // Get id of current scroll item
+//    var cur = scrollItems.map(function(){
+//      if ($(this).offset().top < fromTop)
+//        return this;
+//    });
+//    // Get the id of the current element
+//    cur = cur[cur.length-1];
+//    var id = cur && cur.length ? cur[0].id : "";
+   
+//    if (lastId !== id) {
+//        lastId = id;
+//        // Set/remove active class
+//        menuItems
+//          .parent().removeClass("active")
+//          .end().filter("[href=#"+id+"]").parent().addClass("active");
+//    }                   
+// });
+
+
+
+
+
 // ---------our-services----tab block---
 function tab() {
     let listBtn = document.querySelector('.list');
@@ -137,6 +189,16 @@ $('.one-time').slick({
     }; 
      
 
+
+// const content = document.querySelector('.post__article');
+// const insertTarget = document.querySelector('.page__header');
+// scrollnav.init(content, { 
+//     section :  ' id ' ,
+//   debug: false,
+//   insertTarget: insertTarget,
+//   insertLocation: 'append'
+// });
+
 // ---------line bar--------
 $('#progressbar1').LineProgressbar({
     percentage: 80,
@@ -170,7 +232,7 @@ function phototab() {
 
         let index = target.dataset.link;
         // let disabledTab = document.querySelectorAll('.disabled');
-        let newActiveTab = document.querySelector(`#${index}`);
+        let newActiveTab = document.querySelectorAll(`#${index}`);
         let currentLink  = document.querySelector(`.active`);
 
        
