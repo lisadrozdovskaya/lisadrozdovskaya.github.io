@@ -257,3 +257,10 @@ function phototab() {
     });
 };
 phototab()
+$(document).ready(function() {
+    $('.probar').waypoint(function() {
+    $('.probar').css({
+    animation: "animate-positive 2s",
+    opacity: "1"
+    });
+    }, { offset: '75%' });
