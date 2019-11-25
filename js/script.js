@@ -231,16 +231,28 @@ function phototab() {
         if(!target) return;
 
         let index = target.dataset.link;
-        let disabledTab = document.querySelectorAll('.disabled');
-        let newActiveTab = document.querySelectorAll(`.${index}`);
-        let currentLink  = document.querySelector(`.active`);
 
-       
+        let disabledTab = document.querySelectorAll('.link');
+        let newActiveTab = document.getElementsByClassName(`${index}`);
+
+        let currentLink = document.querySelector('.links .active');
+
+
+        for (let i = 0; i < disabledTab.length; i++) {
+            if (index === 'all-links') {
+                disabledTab[i].classList.remove('disabled');
+            } else if (disabledTab[i].classList.contains(index) ) {
+                disabledTab[i].classList.remove('disabled');
+            } else {
+                disabledTab[i].classList.add('disabled');
+            }
+            
+        }
+
+        console.log(newActiveTab);
+      
         currentLink.classList.remove('active');
         target.classList.add('active');
-
-        // disabledTab.classList.remove('disabled');
-        newActiveTab.classList.add('active-tab');  
             
     });
 };
