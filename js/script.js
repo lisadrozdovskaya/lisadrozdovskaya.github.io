@@ -1,5 +1,15 @@
-
-        let menu = $('.burger-link');
+$(document).ready(function() {
+    $('.progress').waypoint(function() {
+    $('.progress').css({
+    animation: "animate-positive 2s",
+    opacity: "1"
+    });
+    }, { offset: '75%' });
+    
+    
+    
+    
+    let menu = $('.burger-link');
         let menuActive = $('.burger-link-active');
         let navigation = $('.myMenu');
         let navActive = $('.menu-active');
@@ -257,10 +267,3 @@ function phototab() {
     });
 };
 phototab()
-$(document).ready(function() {
-    $('.progressbar').waypoint(function() {
-    $('.progressbar').css({
-    animation: "animate-positive 2s",
-    opacity: "1"
-    });
-    }, { offset: '75%' });
