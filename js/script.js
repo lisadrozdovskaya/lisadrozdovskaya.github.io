@@ -258,8 +258,8 @@ function phototab() {
 };
 phototab()
 $(document).ready(function() {
-    $('.progressbar1').waypoint(function() {
-    $('.progressbar1').css({
+    $('.progressbar').waypoint(function() {
+    $('.progressbar').css({
     animation: "animate-positive 2s",
     opacity: "1"
     });
