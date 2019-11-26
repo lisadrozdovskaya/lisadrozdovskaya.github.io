@@ -130,9 +130,9 @@ $('.one-time').slick({
 // ---------line bar--------
 $('.probar').waypoint(function (a){
     if (a == 'down') {
-        $('.probar').addClass('js-probar');
+        $('.probar').addClass('probarActive');
     } else {
-        $('.probar').removeClass('js-probar');
+        $('.probar').removeClass('probarActive');
     }
     }, {offset: '65%'});
        
