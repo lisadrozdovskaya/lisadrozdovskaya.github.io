@@ -1784,10 +1784,6 @@ button {
   text-align: right;
 }
 
-.js-probar {
-  opacity: 1;
-}
-
 .probar {
   margin-top: 48px;
   position: relative;
@@ -1811,6 +1807,10 @@ button {
 .probar .skill3 {
   bottom: 45px;
   left: 0;
+}
+
+.js-probar {
+  opacity: 1;
 }
 
 .team-cta {
