@@ -1787,8 +1787,6 @@ button {
 .probar {
   margin-top: 48px;
   position: relative;
-  transition: all 200ms ease-in;
-  opacity: 0;
 }
 .probar p {
   width: auto;
@@ -1809,7 +1807,16 @@ button {
   left: 0;
 }
 
+.progress {
+  transition: all 200ms ease-in;
+  opacity: 0;
+}
+
 .js-probar {
+  opacity: 1;
+}
+
+.probarActive {
   opacity: 1;
 }
 
