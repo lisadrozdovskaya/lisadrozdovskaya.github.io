@@ -128,11 +128,11 @@ $('.one-time').slick({
     
 
 // ---------line bar--------
-$('.progress').waypoint(function (a){
+$('.probar').waypoint(function (a){
     if (a == 'down') {
-        $('.progress').addClass('probarActive');
+        $('.probar').addClass('probarActive');
     } else {
-        $('.progress').removeClass('probarActive');
+        $('.probar').removeClass('probarActive');
     }
     }, {offset: '65%'});
        
