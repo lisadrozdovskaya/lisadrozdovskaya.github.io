@@ -25,7 +25,8 @@
             animation: "animate-positive 2s",
             opacity: "1"
             });
-            }, { offset: '75%' });
+            }, { offset: '75%' })
+        });
         
 // // -------navigation----
 // function  navTab() {
@@ -268,4 +269,4 @@ function phototab() {
             
     });
 };
-phototab()})
+phototab()
