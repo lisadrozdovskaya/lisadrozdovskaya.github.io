@@ -1,31 +1,20 @@
+  // // -------navigation----
+ 
+let menu = $('.burger-link');
+let menuActive = $('.burger-link-active');
+let navigation = $('.myMenu');
+let navActive = $('.menu-active');
 
-    
-    
-    
-    
-    let menu = $('.burger-link');
-        let menuActive = $('.burger-link-active');
-        let navigation = $('.myMenu');
-        let navActive = $('.menu-active');
+menu.click(function() {
+    event.preventDefault();
+    menu.toggleClass('burger-link-active');
+    navigation.toggleClass('menu-active');
+});
 
-        menu.click(function() {
-            event.preventDefault();
-            menu.toggleClass('burger-link-active');
-            navigation.toggleClass('menu-active');
-        });
-
-        menuActive.click(function() {
-            menu.removeleClass('burger-link-active');
-            navigation.removeleClass('menu-active');
-        });
-
-       
-        
-// // -------navigation----
-
-
-
-
+menuActive.click(function() {
+    menu.removeleClass('burger-link-active');
+    navigation.removeleClass('menu-active');
+});
 
 // ---------our-services----tab block---
 function tab() {
@@ -53,8 +42,8 @@ function tab() {
 };
 // --circle bar------
 
-$('.progress-bar').waypoint(function (ab){
-        if (ab == 'down') {
+$('.progress-bar').waypoint(function (bar){
+        if (bar == 'down') {
             $('.progress-bar').addClass('js-probar');
         } else {
             $('.progress-bar').removeClass('js-probar');
