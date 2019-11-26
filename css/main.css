@@ -1787,6 +1787,8 @@ button {
 .probar {
   margin-top: 48px;
   position: relative;
+  transition: all 200ms ease-in;
+  opacity: 0;
 }
 .probar p {
   width: auto;
@@ -1805,11 +1807,6 @@ button {
 .probar .skill3 {
   bottom: 45px;
   left: 0;
-}
-
-.progress {
-  transition: all 200ms ease-in;
-  opacity: 0;
 }
 
 .js-probar {
