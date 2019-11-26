@@ -128,8 +128,8 @@ $('.one-time').slick({
     
 
 // ---------line bar--------
-$('.probar').waypoint(function (bar){
-    if (bar == 'down') {
+$('.probar').waypoint(function (a){
+    if (a == 'down') {
         $('.probar').addClass('js-probar');
     } else {
         $('.probar').removeClass('js-probar');
