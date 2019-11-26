@@ -1,10 +1,4 @@
-$(document).ready(function() {
-    $('.progress').waypoint(function() {
-    $('.progress').css({
-    animation: "animate-positive 2s",
-    opacity: "1"
-    });
-    }, { offset: '75%' }));
+
     
     
     
@@ -25,6 +19,14 @@ $(document).ready(function() {
             navigation.removeleClass('menu-active');
         });
 
+        $(document).ready(function() {
+            $('.progress').waypoint(function() {
+            $('.progress').css({
+            animation: "animate-positive 2s",
+            opacity: "1"
+            });
+            }, { offset: '75%' });
+        
 // // -------navigation----
 // function  navTab() {
 //     let listNav = document.querySelector('.myMenu'); 
@@ -266,4 +268,4 @@ function phototab() {
             
     });
 };
-phototab()
+phototab()})
