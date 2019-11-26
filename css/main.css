@@ -1361,10 +1361,6 @@ button {
   opacity: 0;
 }
 
-.js-probar {
-  opacity: 1;
-}
-
 .my-bar1 {
   position: relative;
 }
@@ -1786,6 +1782,10 @@ button {
 .person p {
   margin: 0;
   text-align: right;
+}
+
+.js-probar {
+  opacity: 1;
 }
 
 .probar {
