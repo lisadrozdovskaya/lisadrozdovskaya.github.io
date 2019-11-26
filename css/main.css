@@ -1357,6 +1357,12 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  transition: all 200ms ease-in;
+  opacity: 0;
+}
+
+.js-probar {
+  opacity: 1;
 }
 
 .my-bar1 {
@@ -1785,6 +1791,8 @@ button {
 .probar {
   margin-top: 48px;
   position: relative;
+  transition: all 200ms ease-in;
+  opacity: 0;
 }
 .probar p {
   width: auto;
@@ -2239,6 +2247,7 @@ footer .container p {
   }
 
   .sticky {
+    top: 24px;
     width: 20px;
   }
 }
